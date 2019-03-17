@@ -14,7 +14,15 @@
  作者：正点原子 @ALIENTEK
 ************************************************/
 
-
+void NRF24L01_init(void)
+{
+	 delay_us(100);
+	 delay_us(100);
+}
+void NRF24L_init(void)
+{
+	 delay_us(100);
+}
  int main(void)
  {	
 	delay_init();	    //延时函数初始化	  
@@ -24,11 +32,11 @@
 	{
 		LED0=0;
 		LED1=1;
-		delay_ms(300);	//延时300ms
+//		delay_ms(300);	//延时300ms
 		LED0=1;
 		LED1=0;
-		delay_ms(40);	//延时20ms
-		delay_ms(300);	//延时300ms
+		delay_ms(200);	//延时20ms
+//		delay_ms(300);	//延时300ms
 	}
  }
 
